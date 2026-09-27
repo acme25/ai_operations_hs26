@@ -1,7 +1,5 @@
 # ai_operations_hs26
 
-# ai_operations_hs26
-
 Repo für die Assignments im Modul Business AI "AI Operations" (FHNW).
 
 ## Auftrag 1 – DevOps
