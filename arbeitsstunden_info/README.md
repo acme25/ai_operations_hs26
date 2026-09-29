@@ -10,6 +10,9 @@ Eine kleine REST-API, die Arbeitszeit und Lohn für mehrere Arbeitgeber berechne
 - Optionale Berechnung von Brutto- zu Netto-Lohn (AHV/IV/EO, ALV)
 - Einfache Web-Oberfläche zur manuellen Eingabe, inkl. JSON-Ansicht und Excel-Export (Kopieren als Tab-getrennte Zeile) -> (TODO: Muss noch automatisiert werden)
 
+### Kurzes Erklärvideo
+<video controls src="../medien/Stundenzettel_AnnaNikitaMueller.mp4" title="Title"></video>
+
 ## Setup
 
 ```bash
@@ -73,12 +76,24 @@ uvicorn arbeitsstunden_info.main:app --reload
 | Hilfsmittel | Verwendung | Betroffene Stellen |
 |---|---|---|
 | Claude | Schritt-für-Schritt-Mentoring beim eigenständigen Programmieren: Code-Reviews, Fehleranalyse, Diskussion von Design-Entscheidungen | Business-Logik in `classes.py`, API-Anbindung in `main.py` |
-| Claude | Vollständige Generierung der Web-Oberfläche (HTML/CSS/JS) nach eigenen Vorgaben ("Vibe Coding") | `index.html` |
+| Claude | Vollständige Generierung der Web-Oberfläche HTML nach eigenen Vorgaben ("Vibe Coding") | `index.html` |
 | Claude | Erstellung der README-Dokumentation basierend auf eigenen Notizen und dem Projektverlauf | `README.md` |
 
-## Deployment
+## Anhang 1: Meine Learnings
+
+Das Tool ist schrittweise gewachsen: von simplem Input (Arbeitgeber, Start/Ende) über Pausenzeit und Monats-Soll bis zu optionalen Sozialabzügen (AHV/IV/EO, ALV) – relevant gerade für Studierende, die ihre AHV-Beitragspflicht im Blick behalten müssen. Der Wochenendzuschlag wird bewusst aus dem Datum abgeleitet statt manuell abgefragt, damit das Tool weniger Eingaben braucht und "mitdenkt".
+
+**Wichtigste Erkenntnisse:**
+- Pydantic-Modelle sind ein statischer Bauplan – Felder lassen sich nicht per `if` bedingt definieren; für optionale Werte braucht es `Optional` aus `typing`.
+- `timedelta` (Zeitspanne) und `datetime` (Zeitpunkt) sind unterschiedliche Konzepte entscheidend für korrekte Berechnungen über Mitternacht hinweg.
+- Formatierung (z. B. Datumsdarstellung) gehört in die Anzeige, nicht ins Datenmodell.
+
+**Mögliche Erweiterungen:** Stempeluhr-Funktion (Start/Stopp statt manueller Eingabe), Plausibilitätsprüfung der Schichtdauer.
+
+## Anhang 2: Deployment
 TODO:
 - [x]Lokal Auftrag erledigen
-- []README Dokumentation erstellen
+- [x]README Dokumentation erstellen
+- [x]Code noch kommentieren
 - []automatisiertes Ausfüllen des Stundenzettels
 - []Cloud Auftrag erledigen
