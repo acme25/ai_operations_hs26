@@ -72,6 +72,12 @@ uvicorn arbeitsstunden_info.main:app --reload
 - Batch-Skript zum automatisierten Ausfüllen mehrerer Schichten aus einer CSV (Konzept besprochen, noch nicht Teil dieses Repos)
 - Persistente Historie pro Arbeitgeber/Monat
 
+## Auftrag 1.2 Cloud
+Für Auftrag 1.2 (Cloud) erweitere ich die Anwendung um einen CSV-Import: Eine bestehende Stundenliste wird über die UI hochgeladen, die neu berechnete Schicht automatisch als Zeile ergänzt und die aktualisierte Datei wieder zum Download bereitgestellt.
+
+
+
+
 ## Hilfsmittelverzeichnis
 | Hilfsmittel | Verwendung | Betroffene Stellen |
 |---|---|---|
@@ -95,5 +101,6 @@ TODO:
 - [x]Lokal Auftrag erledigen
 - [x]README Dokumentation erstellen
 - [x]Code noch kommentieren
-- []automatisiertes Ausfüllen des Stundenzettels
+- [x]automatisiertes Ausfüllen des Stundenzettels
+- []README Abschnitt bei Auftrag 1.2 verbessern
 - []Cloud Auftrag erledigen
