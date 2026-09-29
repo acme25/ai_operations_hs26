@@ -1,6 +1,18 @@
 # ai_operations_hs26
 
-Repo für die Assignments im Modul Business AI "AI Operations" (FHNW).
+Repository für die Assignments im Modul «AI Operations» (Business AI, FHNW).
+
+## Branches
+
+Ich arbeite wie in der Praxis üblich mit `main` und `dev` als feste Basis, plus kurzlebigen Feature-Branches bei Bedarf:
+
+- `main` – stabiler, abgabebereiter Stand
+- `dev` – Entwicklung und Tests
+- `autocomplete` – Feature-Branch für die Eingabe- und Ausgabe-Datei
+
+So festige ich gleichzeitig meine Git-Kenntnisse im Terminal. Ab dem Auftrag 1.2 (Cloud) erweitere ich diesen Workflow und orientiere mich dabei an den folgenden Branches dieser Grafik:
+
+![alt text](medien/GitBranches.png)
 
 ## Auftrag 1 – DevOps
 
