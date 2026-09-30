@@ -13,11 +13,8 @@ Eine kleine REST-API, die Arbeitszeit und Lohn für mehrere Arbeitgeber berechne
 
 ### Kurzes Erklärvideo
 
-Umsetzung Lokal:
-<video controls src="../medien/Stundenzettel_AnnaNikitaMueller.mp4" title="Title"></video>
-
-Umsetzung Cloud:
-<video controls src="../medien/Stundenzettel_cloud_AnnaNikitaMueller.mp4" title="Title"></video>
+- Umsetzung lokal: [Video öffnen](../medien/Stundenzettel_AnnaNikitaMueller.mp4)
+- Umsetzung Cloud: [Video öffnen](../medien/Stundenzettel_cloud_AnnaNikitaMueller.mp4)
 
 ## Setup
 
