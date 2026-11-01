@@ -117,5 +117,5 @@ Bei einem kommerziellen Angebot kämen **Cybersecurity und Ausfallsicherheit** a
 | Hilfsmittel | Verwendung | Betroffene Dateien |
 |---|---|---|
 | ChatGPT | Generierung des Visualisierungscodes nach eigenen Vorgaben («Vibe Coding») | `traffic_prediction.ipynb` (Schritte 3–6) |
-| Claude | Überarbeitung der Notebook-Texte und Umstellung auf `.env` für den API-Key | `traffic_prediction.ipynb` |
+| Claude | Überarbeitung der Notebook-Texte | `traffic_prediction.ipynb` |
 | Claude | Erstellung der README-Dokumentation auf Basis meines Berichts | `README.md` |
