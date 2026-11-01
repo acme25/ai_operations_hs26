@@ -30,7 +30,7 @@ Arbeitszeit- und Lohnrechner für mehrere Arbeitgeber, bereitgestellt als REST-A
 Prognose des stündlichen Verkehrsaufkommens auf der Interstate 94 mit Azure AutoML (LightGBM), bereitgestellt als Online Endpoint und abgefragt über ein Jupyter Notebook.
 
 - Demo-Video: [`medien/Traffic_Volume_Prediction_Demo_AnnaNikitaMueller.mp4`](./medien/Traffic_Volume_Prediction_Demo_AnnaNikitaMueller.mp4)
-- Details: [`azure_info/README.md`](./azure_info/README.md)
+- Details: [`azure_info/README.md`](traffic_volume_prediction/README.md)
 
 ## Hilfsmittelverzeichnis
 
